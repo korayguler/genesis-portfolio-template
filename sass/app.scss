@@ -1,0 +1,19 @@
+//main.scss file
+
+//BASE
+@import 'base/normalize.scss';
+@import 'base/reset.scss';
+@import 'base/imagehover.min.scss';
+
+//HELPERS
+@import 'helpers/mixins.scss';
+@import 'helpers/variables.scss';
+
+//PAGES
+@import 'pages/home.scss';
+@import 'pages/contact.scss';
+
+//LAYOUTS
+@import 'layouts/main.scss';
+@import 'layouts/header.scss';
+@import 'layouts/footer.scss';

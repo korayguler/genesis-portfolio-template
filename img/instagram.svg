@@ -1,0 +1,5 @@
+<svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <path id="Shape" d="M4.687,15A4.688,4.688,0,0,1,0,10.312V4.687A4.688,4.688,0,0,1,4.687,0h5.625A4.688,4.688,0,0,1,15,4.687v5.625A4.689,4.689,0,0,1,10.312,15Z"/>
+  <path id="Shape-2" data-name="Shape" d="M0,3.758A3.758,3.758,0,1,1,3.758,7.517,3.759,3.759,0,0,1,0,3.758Z" transform="translate(3.759 3.759)"/>
+  <circle id="Oval" cx="0.495" cy="0.495" r="0.495" transform="translate(11.036 2.973)"/>
+</svg>

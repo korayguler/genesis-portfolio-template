@@ -1,0 +1,55 @@
+.footer {
+  margin-top: 114px;
+  margin-bottom: 49px;
+  width: 100%;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo-container {
+      .logo {
+        font-size: 28px;
+        margin: 0;
+        font-weight: bold;
+        transition: 200ms all;
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      .social-item {
+        width: 18px;
+        height: 18px;
+        margin-right: 24px;
+        &:last-child {
+          margin-right: 0;
+          width: 22px;
+          height: 18px;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .nav {
+      .nav-item {
+        font-size: 18px;
+        margin-right: 30px;
+        transition: 200ms all;
+
+        &:hover {
+          color: $color-secondary;
+          border-bottom: 3px solid $color-secondary;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

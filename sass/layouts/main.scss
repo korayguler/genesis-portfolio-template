@@ -1,0 +1,18 @@
+body {
+  font-family: 'muli', sans-serif;
+  color: $color-primary;
+}
+
+.container {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-highlight {
+  color: $color-secondary;
+}
+
+ul {
+  list-style-type: none;
+}

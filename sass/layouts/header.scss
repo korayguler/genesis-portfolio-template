@@ -1,0 +1,37 @@
+.header {
+  margin-top: 61px;
+  width: 100%;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo-container {
+      .logo {
+        font-weight: bold;
+        font-size: 28px;
+        margin: 0;
+        transition: 200ms all;
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+
+    .nav {
+      .nav-item {
+        font-size: 18px;
+        margin-right: 30px;
+        transition: 200ms all;
+
+        &:hover {
+          color: $color-secondary;
+          border-bottom: 3px solid $color-secondary;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
