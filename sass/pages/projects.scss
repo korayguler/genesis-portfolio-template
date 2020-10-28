@@ -1,0 +1,15 @@
+.projects-page {
+  margin-top: 133px;
+
+  .container {
+    column-count: 3;
+    column-gap: 30px;
+
+    @include respond(tablet) {
+      column-count: 2;
+    }
+    @include respond(mobile) {
+      column-count: 1;
+    }
+  }
+}

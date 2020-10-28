@@ -7,6 +7,13 @@ body {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include respond(mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .text-highlight {

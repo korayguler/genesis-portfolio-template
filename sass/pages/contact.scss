@@ -5,7 +5,11 @@
   .container {
     display: grid;
     grid-template-columns: 3fr 2fr;
-
+    grid-template-rows: 1fr;
+    @include respond(mobile) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
     .contact-info {
       .contanct-info-title {
         max-width: 445px;

@@ -2,11 +2,20 @@
   margin-top: 96px;
   margin-bottom: 166px;
 
+  @include respond(mobile) {
+    margin-bottom: 240px;
+  }
   .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+
     height: 256px;
     position: relative;
+    @include respond(tablet) {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
 
     .about {
       .mini-text-container {
@@ -30,6 +39,9 @@
     .quote {
       display: flex;
       align-items: flex-end;
+      @include respond(tablet) {
+        margin-top: 25px;
+      }
 
       .quote-text {
         font-size: 18px;
@@ -54,14 +66,21 @@
   .container {
     column-count: 3;
     column-gap: 30px;
+    overflow: hidden;
+
+    @include respond(tablet) {
+      column-count: 2;
+    }
+
+    @include respond(mobile) {
+      column-count: 1;
+    }
     .item {
       display: inline-block;
       margin: 0 0 30px;
       width: 100%;
       position: relative;
       &:hover {
-        height: auto;
-        width: 200%;
         box-shadow: 0 5px 10px rgba($color-primary, 0.3);
         img {
           transform: scale(1.2, 1.2) rotate(2deg);
@@ -81,7 +100,13 @@
   .container {
     display: grid;
     grid-template-columns: 4fr 3fr;
+    grid-template-rows: 1fr;
+
     justify-content: space-between;
+    @include respond(mobile) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
     .services-title {
       max-width: 635px;
 
@@ -97,7 +122,10 @@
       line-height: 1.5;
       grid-gap: 60px;
       color: rgba($color-primary, 0.6);
-
+      @include respond(mobile) {
+        margin-top: 30px;
+        margin-left: 0;
+      }
       .services-items {
         .service-item {
           .service-item-text {
@@ -123,14 +151,21 @@
       .experince-item-mini {
         display: grid;
         grid-template-columns: 3fr 2fr 1fr 1fr;
+        grid-template-rows: 1fr;
         margin-bottom: 77px;
-
+        @include respond(mobile) {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+        }
         &:last-child {
           margin-bottom: 0;
         }
         .experince-item-mini-title {
           font-size: 22px;
           font-weight: bold;
+          @include respond(mobile) {
+            display: none;
+          }
         }
         .experince-item-mini-content {
           font-size: 18px;
@@ -150,6 +185,10 @@
         }
         .experince-item-mini-date {
           text-align: right;
+
+          @include respond(mobile) {
+            display: none;
+          }
           .experince-item-mini-date-text {
             margin-right: 0;
           }

@@ -1,9 +1,8 @@
-//main.scss file
-
 //BASE
 @import 'base/normalize.scss';
 @import 'base/reset.scss';
 @import 'base/imagehover.min.scss';
+@import 'base/fa-all.scss';
 
 //HELPERS
 @import 'helpers/mixins.scss';
@@ -12,6 +11,7 @@
 //PAGES
 @import 'pages/home.scss';
 @import 'pages/contact.scss';
+@import 'pages/projects.scss';
 
 //LAYOUTS
 @import 'layouts/main.scss';
