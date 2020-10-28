@@ -36,23 +36,5 @@
         }
       }
     }
-    .nav {
-      @include respond(mobile) {
-        display: none;
-      }
-      .nav-item {
-        font-size: 16px;
-        margin-right: 30px;
-        transition: 200ms all;
-        text-transform: uppercase;
-        &:hover {
-          color: $color-secondary;
-          border-bottom: 3px solid $color-secondary;
-        }
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
   }
 }
