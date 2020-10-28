@@ -1,4 +1,4 @@
-### genesis-portfolio-template
+#### Genesis Portfolio Template
 
 ### How to run
 
@@ -17,3 +17,21 @@ npm install
 ```
 npm start
 ```
+
+#### Tech Stack
+
+```
+- html
+- scss
+- javascript
+- gulp.js
+- font-awesome
+- image-hover
+```
+
+#### Preview
+
+```
+https://korayguler.github.io/genesis-portfolio-template/
+```
+
